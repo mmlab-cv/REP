@@ -129,7 +129,7 @@
       <img src="./static/images/REP_teaser.png"
             alt="Teaser image."/>
       <h2 class="subtitle has-text-centered">
-        We present <i>REP - Render, Encode, Plan</i>, an complete framework to train different kinds of intelligent agents in-engine inside Unreal Engine 5. 
+        We present <i>REP - Render, Encode, Plan</i>, a novel framework to train different kinds of intelligent agents inside Unreal Engine 5. 
         <b>a)</b> Different kinds of agents can be spawned into arbitrarily large 3D environments, while <b>b)</b> capturing diverse kinds of observations (including visual), that <b>c)</b> are then encoded an hybrid RL+DL procedure. The encoded observations give rise to <b>d)</b> a set of actions for each agent, that receives rewards to improve over time.
       </h2>
     </div>
@@ -161,9 +161,9 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>Learning is an iterative process that requires multiple forms of interaction with the environment. During learning, we experience the world through the repetition of observations and actions, gaining an insight on which combination of them leads to the best result, according to our goals. The same paradigm has been applied to traditional reinforcement learning (RL) over the years, with impressive results on 3D navigation and planning. On the other hand, the computer vision community has been focusing mostly on vision-related tasks (e.g. classification, segmentation, depth estimation), using deep learning (DL).</p>
+          <p>Learning is an iterative process that requires multiple forms of interaction with the environment. During learning, we experience the world through the repetition of observations and actions, gaining an insight into which combination of these leads to the best results, according to our goals. The same paradigm has been applied to traditional reinforcement learning (RL) over the years, with impressive results in 3D navigation and planning. On the other hand, the computer vision community has been focusing mostly on vision-related tasks (e.g. classification, segmentation, depth estimation) using deep learning (DL).</p>
         
-        <p>We present <i>REP: Render, Encode, Plan</i>, a unified framework to train embodied agents of different kinds (humanoid, vehicles, and drones) inside Unreal Engine, showing how a combination of RL and DL can help in shaping intelligent agents that can better sense the surrounding environment. The main advantage of our method is the combination of different sensory modalities, including game state observations and vision features, that allow the agents to share a similar structure in their observations and rewards, while defining separate rewards based on their goal.
+        <p>We present <i>REP: Render, Encode, Plan</i>, a unified framework to train embodied agents of different kinds (humanoids, vehicles, and drones) inside Unreal Engine, showing how a combination of RL and DL can help to shape intelligent agents that can better sense the surrounding environment. The main advantage of our method is the combination of different sensory modalities, including game state observations and vision features, that allow the agents to share a similar structure in their observations and rewards, while defining separate rewards based on their goals.
           We demonstrate impressive generalization capabilities on large-scale realistic 3D environments and on multiple dynamically changing scenarios, with different goals and rewards.</p>
         </div>
       </div>
@@ -183,7 +183,7 @@
           <img src="./static/images/REP_architecture.png"
                 alt="Architecture."/>
                 <p></p>
-                <p>Simplified schematic of our <b>REP</b> architecture. The goal here is to map physical and visual observations from multiple kinds of agents in a big, open world into a meaningful set of actions. We do so by first creating an encoding of the visual observations using a DNN encoder. Then, we concatenate the normalized physical observations (i.e. game state) with the newly created visual observations. We then train the agents to optimize a policy that produces the best set of actions for a given reward function, using the PPO algorithm. At inference time, the same diagram applies, but the computation of the visual features runs in-engine using NNE for optimal performance.</p>
+                <p>Simplified schematic of our <b>REP</b> architecture. The goal here is to map physical and visual observations from multiple kinds of agents from a big, open world, into a meaningful set of actions. We do so by first creating an encoding of the visual observations using a DNN encoder. Then, we concatenate the normalized physical observations (i.e. game state) with the newly created visual observations. We then train the agents to optimize a policy that produces the best set of actions for a given reward function, using the PPO algorithm. At inference time, the same diagram applies, but the computation of the visual features runs in-engine using NNE for optimal performance.</p>
           </h2>
         </div>
       </div>
