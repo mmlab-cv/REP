@@ -137,20 +137,42 @@
 </section>
 
 
-<!-- Teaser video with Youtube link. -->
+<!-- Wide demo videos row -->
 <section class="hero teaser">
-  <div class="container is-max-desktop">
+  <div class="container is-fluid"> <!-- was is-max-desktop -->
     <div class="hero-body">
-      <div class="columns is-centered">
+      <h2 class="subtitle has-text-centered">Demonstration videos</h2>
+
+      <div class="columns is-variable is-3 is-centered">
         <div class="column has-text-centered">
-          <h2 class="subtitle has-text-centered">Teaser video</h2>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/pkqUd6PeGQY"
-                  title="YouTube video player" frameborder="0"
-                  allowfullscreen></iframe>
+          <h3 class="subtitle has-text-centered">Urban environment</h3>
+          <iframe
+            src="https://drive.google.com/file/d/1cICwjIy9GEqRKzSgUbRLEyn_D4BYz9Ot/preview"
+            width="100%" height="420"
+            allow="autoplay"></iframe>
+        </div>
+
+        <div class="column has-text-centered">
+          <h3 class="subtitle has-text-centered">Drone navigation</h3>
+          <iframe
+            src="https://drive.google.com/file/d/12nNyK3sEaQECD9wFfDl2boOW_1XBBEia/preview"
+            width="100%" height="420"
+            allow="autoplay"></iframe>
+        </div>
+
+        <div class="column has-text-centered">
+          <h3 class="subtitle has-text-centered">Agent exploration</h3>
+          <iframe
+            src="https://drive.google.com/file/d/1tHsNhVCwA_LH_1KN-DyIQALL6o52PriR/preview"
+            width="100%" height="420"
+            allow="autoplay"></iframe>
         </div>
       </div>
     </div>
   </div>
+</section>
+
+
 
 
 
@@ -188,7 +210,23 @@
         </div>
       </div>
       <!--/ Training. -->
+
     </div>
+    <div class="columns is-centered">
+      <!-- Training. -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">State-of-the-art comparison</h2>
+          <img src="./static/images/REP_table.png"
+                alt="Architecture."/>
+                <p></p>
+          </h2>
+        </div>
+      </div>
+      <!--/ Training. -->
+    </div>
+
+
 
 
     <section class="section">
@@ -215,10 +253,25 @@
               <!-- Training. -->
               <div class="column">
                 <div class="content">
-                  <h2 class="title is-3">Results</h2>
+                  <h2 class="title is-3">Results: drone navigation</h2>
                   <img src="./static/images/REP_spline_results.png"
                         alt="Results."/>
                         <p>Horizontal and vertical extent of the Spline Navigation scenarios. Vertical bars identify the localized inverse value of the dot product between the drone flying direction and the spline direction.</p>
+
+                  </h2>
+                </div>
+              </div>
+              <!--/ Training. -->
+            </div>
+
+          <div class="container is-max-desktop">
+            <div class="columns is-centered">
+              <!-- Training. -->
+              <div class="column">
+                <div class="content">
+                  <h2 class="title is-3">Results: crowd simulation</h2>
+                  <img src="./static/images/REP_traj.png"
+                        alt="Results."/>
 
                   </h2>
                 </div>
